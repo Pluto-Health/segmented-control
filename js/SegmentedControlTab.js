@@ -94,7 +94,7 @@ export const SegmentedControlTab = ({
         ) : isBase64(value) ? (
           <Image source={{uri: value}} style={styles.segmentImage} />
         ) : (
-          <Text style={[idleStyle, selected && activeStyle]}>{value}</Text>
+          <Text style={[idleStyle, selected && activeStyle]} numberOfLines={1}>{value}</Text>
         )}
       </View>
     </TouchableOpacity>
